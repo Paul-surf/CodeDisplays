@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Source Code Displayer</h1>
+    <h3>Password Generator</h3>
+    <fieldset class="passwordField">
+        <button id="btn" onclick="passwordGenerator()">Generate</button>
+        <output class="newPassword" id="pass"></output>
+    </fieldset>
+    <pre>
+        <code>1|   function passwordGenerator() {
+2|            var newPassword = "";
+3|            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*^!#¤%&/()=?`+'";
+4| 
+5|            for (var i = 0; i < 20; i++)
+6|            newPassword += possible.charAt(Math.floor(Math.random() * possible.length));
+7|
+8|            return newPassword;
+9|   }
+        </code>
+    </pre>
+    
+    <h3>Multiplier</h3>
+    <fieldset>
+        <input type="Number" name="num" id="1">
+        <input type="Number" name="2ndNum" id="2">
+        <button id='button' onclick="onBtnClick()">Multiply</button>
+        <output class="Result" id="result"></output>
+    </fieldset>
+    <label for="Mulitiplier Code">
+        <h3 class="block">View Source Code</h3>
+        <div class="AnimaterParent">
+          <span></span><span></span><span></span>  
+        </div>
+    </label>
+    <pre>
+        <code>1   |   function onBtnClick(){
+2   |         let toggle = 0;
+3   |         toggle += 1;
+4   |              
+5   |         var num1 = document.getElementById('1').value;
+6   |         var num2 = document.getElementById('2').value;
+7   |         var result = (num1 * num2)
+8   |              
+9   |         if (toggle == 1) {
+10 |             var element = document.getElementById("result");
+11 |             element.classList.toggle("resultCSS");
+12 |         }
+13 |         console.log(toggle);
+14 |         document.getElementById('result').innerHTML = result;
+15 |   }
+        </code>
+    </pre>
+</body>
+</html>

@@ -1,0 +1,64 @@
+pre code {
+	display: block; 
+	padding: 3px 3px 2px; 
+	font-size: 14px; 
+	line-height: 20px;
+	width: 61%;
+	background-color: #333;
+	font-family: arial;
+	color: #f7f7f7;
+	font-weight: bold;
+}
+
+fieldset {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+}
+
+.passwordField {
+    width: 23%;
+}
+
+#pass {
+    padding: 3px;
+    border: solid grey 1px;
+    margin-left: 10px;
+}
+
+.R esult {
+    padding: 3px;
+    border: solid grey 1px;
+    margin-left: 10px;
+}
+
+input {
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    border: solid grey 2px;
+    width: 15em;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 10px;
+}
+
+.AnimaterParent {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+span {
+    width: 20px;
+    height: 3px;
+    background: black;
+    display: block;
+    position: relative;
+    margin-top: 3px;
+}
